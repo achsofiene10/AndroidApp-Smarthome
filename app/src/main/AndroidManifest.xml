@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".acceuil"
+            android:label="@string/title_activity_acceuil"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:parentActivityName=".Listacceuil" />
+        <activity
+            android:name=".Listacceuil"
+            android:parentActivityName=".acceuil" />
+        <activity
+            android:name=".Listlampe"
+            android:parentActivityName=".Listacceuil" />
+        <activity
+            android:name=".activity_porte"
+            android:parentActivityName=".Listacceuil" />
+        <activity
+            android:name=".Activity_ventil"
+            android:parentActivityName=".Listacceuil" />
+        <activity
+            android:name=".Camera"
+            android:parentActivityName=".Listacceuil" />
+        <activity
+            android:name=".Capteurs"
+            android:parentActivityName=".Listacceuil" />
+        <activity
+            android:name=".Securite"
+            android:parentActivityName=".Listacceuil" />
+        <service android:name=".MyService" />
+        <activity android:name=".Keypad" android:parentActivityName=".Securite"
+            ></activity>
+    </application>
+
+</manifest>

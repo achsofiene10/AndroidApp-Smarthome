@@ -1,0 +1,50 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.myapplication.Fragment2"
+    android:background="#FFFFFF"
+
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="386dp"
+        android:layout_height="228dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ventil1"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <SeekBar
+
+        android:id="@+id/voltage"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="316dp"
+        android:layout_height="124dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:max="1"
+        android:progress="0"
+        android:thumbTint="@color/colorPrimaryDark"
+        android:progressTint="@color/colorPrimary"
+        android:layout_marginTop="70dp"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_marginBottom="30dp"
+        android:text="OFF"
+        android:layout_gravity="bottom"
+        android:textAlignment="center"
+        android:textSize="45dp"/>
+
+</android.support.design.widget.CoordinatorLayout>

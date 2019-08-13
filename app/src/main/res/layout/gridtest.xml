@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context=".Listacceuil"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/button3"
+            android:layout_marginLeft="34dp"
+            android:layout_marginStart="34dp"
+            android:layout_toEndOf="@+id/button3"
+            android:layout_toRightOf="@+id/button3"
+            android:background="@drawable/buttonauto"
+            android:text="Mode Auto"
+            android:fontFamily="@font/lato_light"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="41dp"
+            android:fontFamily="@font/lato_light"
+            android:layout_marginStart="41dp"
+            android:textStyle="italic"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/buttonauto"
+            android:text="Mode Manuel"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

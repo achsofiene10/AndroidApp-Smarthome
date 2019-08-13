@@ -1,0 +1,49 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.myapplication.humidite"
+    android:background="#5eb6ed">
+
+
+    <ImageView
+        android:layout_width="105dp"
+        android:layout_height="141dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/humidite"
+        app:layout_anchorGravity="left|top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:id="@+id/arc_progress1"
+        android:layout_width="189dp"
+        android:layout_height="201dp"
+        android:layout_marginTop="8dp"
+        android:background="#5eb6ed"
+        app:arc_bottom_text="humidite"
+        app:arc_bottom_text_size="18sp"
+        app:arc_max="100"
+        app:arc_progress="36"
+        app:arc_stroke_width="10dp"
+        app:arc_suffix_text="%"
+        app:arc_suffix_text_size="25dp"
+        app:arc_text_color="#FFFFFF"
+        app:arc_text_size="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544" />
+
+</android.support.constraint.ConstraintLayout>
